@@ -2,12 +2,10 @@
 
 ## References and Resources
 
-ChatGPT
-
 StackOverflow
 
 ## Verbal Collaboration
 
-| Student Name | CCID      |
-| ------------ | --------- |
-| N/A          | N/A       |
+| Student Name                         | CCID      |
+| ------------------------------------ | --------- |
+| Mohamed Irfan Mohamed Niyaz          | mmohame6  |
