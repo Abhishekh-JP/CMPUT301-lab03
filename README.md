@@ -2,8 +2,8 @@
 
 ## References and Resources
 
-ChatGPT
-StackOverflow
+. ChatGPT
+. StackOverflow
 
 ## Verbal Collaboration
 
