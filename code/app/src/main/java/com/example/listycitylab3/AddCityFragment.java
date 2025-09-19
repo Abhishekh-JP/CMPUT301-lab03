@@ -18,17 +18,14 @@ public class AddCityFragment extends DialogFragment {
         void updateCity(City city, int position);
     }
 
-    private static final String ARG_CITY = "arg_city";
-    private static final String ARG_POSITION = "arg_position";
-
     private AddCityDialogListener listener;
 
     public static AddCityFragment newInstance(@Nullable City city, int position) {
         AddCityFragment fragment = new AddCityFragment();
         Bundle args = new Bundle();
         if (city != null) {
-            args.putSerializable(ARG_CITY, city);
-            args.putInt(ARG_POSITION, position);
+            args.putSerializable("arg_city", city);
+            args.putInt("arg_position", position);
         }
         fragment.setArguments(args);
         return fragment;
@@ -55,8 +52,8 @@ public class AddCityFragment extends DialogFragment {
         int position = -1;
 
         if (getArguments() != null) {
-            existingCity = (City) getArguments().getSerializable(ARG_CITY);
-            position = getArguments().getInt(ARG_POSITION, -1);
+            existingCity = (City) getArguments().getSerializable("arg_city");
+            position = getArguments().getInt("arg_position", -1);
 
             if (existingCity != null) {
                 editCityName.setText(existingCity.getName());
